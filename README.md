@@ -59,8 +59,8 @@ bashCopynpm install
 
 3. Set up the database:
 
-Create a PostgreSQL database named auth_system.
-Run the following SQL scripts to create the necessary tables:
+- Create a PostgreSQL database named auth_system.
+- Run the following SQL scripts to create the necessary tables:
 ```
 sqlCopyCREATE TABLE users (
   id SERIAL PRIMARY KEY,
@@ -93,7 +93,7 @@ CREATE TABLE user_tokens (
 
 4. Configure the environment variables:
 
-Create a .env file in the root directory with the following content:
+- Create a .env file in the root directory with the following content:
 ```
 envCopyJWT_SECRET=your_jwt_secret_key_here
 TOKEN_EXPIRY=24h
@@ -120,34 +120,34 @@ Dashboard: http://localhost:5000/public/dashboard.html
 **API Endpoints**
 - **Authentication**
 
-POST /api/register: Register a new user.
-POST /api/login: Log in and receive a token.
-POST /api/logout: Log out by invalidating the token.
+- POST /api/register: Register a new user.
+- POST /api/login: Log in and receive a token.
+- POST /api/logout: Log out by invalidating the token.
 
 - **Task Management**
 
-POST /api/task/create: Create a new task.
-GET /api/task/list: Get a list of all tasks.
-PUT /api/task/update: Update a task.
-DELETE /api/task/delete: Soft delete a task.
+- POST /api/task/create: Create a new task.
+- GET /api/task/list: Get a list of all tasks.
+- PUT /api/task/update: Update a task.
+- DELETE /api/task/delete: Soft delete a task.
 
 
 - **Frontend Pages**
 
-Login and Registration: Handles user authentication.
-Dashboard: Allows task management (Create, Update, Delete).
+- Login and Registration: Handles user authentication.
+- Dashboard: Allows task management (Create, Update, Delete).
 
 - **Technologies Used**
 
-Backend: Node.js, Express.js, PostgreSQL
-Frontend: HTML, CSS, JavaScript
-Authentication: JWT, bcrypt
+- Backend: Node.js, Express.js, PostgreSQL
+- Frontend: HTML, CSS, JavaScript
+- Authentication: JWT, bcrypt
 
 - **Future Enhancements**
 
-Role-based access control for administrative tasks.
-Integration with third-party services (e.g., email verification).
-Enhanced frontend design using modern frameworks like React or Vue.js.
+- Role-based access control for administrative tasks.
+- Integration with third-party services (e.g., email verification).
+- Enhanced frontend design using modern frameworks like React or Vue.js.
 
 - **License**
 This project is licensed under the MIT License.
