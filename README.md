@@ -46,18 +46,18 @@ Before starting, ensure you have the following installed:
 
 **Setup Instructions**
 
-1.Clone the repository:
+1. Clone the repository:
 ```
 bashCopygit clone https://github.com/your-username/auth-task-management.git
 cd auth-task-management
 ```
 
-2.Install dependencies:
+2. Install dependencies:
 ```
 bashCopynpm install
 ```
 
-3.Set up the database:
+3. Set up the database:
 
 Create a PostgreSQL database named auth_system.
 Run the following SQL scripts to create the necessary tables:
@@ -91,7 +91,7 @@ CREATE TABLE user_tokens (
 ```
 
 
-4.Configure the environment variables:
+4. Configure the environment variables:
 
 Create a .env file in the root directory with the following content:
 ```
@@ -105,12 +105,12 @@ PG_DATABASE=auth_system
 ```
 
 
-5.Start the server:
+5. Start the server:
 ```
 bashCopynpm start
 ```
 
-6.Open the application in your browser:
+6. Open the application in your browser:
 ```
 Login/Register: http://localhost:5000/public/index.html
 Dashboard: http://localhost:5000/public/dashboard.html
@@ -118,13 +118,13 @@ Dashboard: http://localhost:5000/public/dashboard.html
 
 
 **API Endpoints**
-**Authentication**
+- **Authentication**
 
 POST /api/register: Register a new user.
 POST /api/login: Log in and receive a token.
 POST /api/logout: Log out by invalidating the token.
 
-**Task Management**
+- **Task Management**
 
 POST /api/task/create: Create a new task.
 GET /api/task/list: Get a list of all tasks.
@@ -132,24 +132,24 @@ PUT /api/task/update: Update a task.
 DELETE /api/task/delete: Soft delete a task.
 
 
-**Frontend Pages**
+- **Frontend Pages**
 
 Login and Registration: Handles user authentication.
 Dashboard: Allows task management (Create, Update, Delete).
 
-**Technologies Used**
+- **Technologies Used**
 
 Backend: Node.js, Express.js, PostgreSQL
 Frontend: HTML, CSS, JavaScript
 Authentication: JWT, bcrypt
 
-**Future Enhancements**
+- **Future Enhancements**
 
 Role-based access control for administrative tasks.
 Integration with third-party services (e.g., email verification).
 Enhanced frontend design using modern frameworks like React or Vue.js.
 
-**License**
+- **License**
 This project is licensed under the MIT License.
 Contributions
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
