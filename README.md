@@ -46,18 +46,18 @@ Before starting, ensure you have the following installed:
 
 **Setup Instructions**
 
-Clone the repository:
+1.Clone the repository:
 ```
 bashCopygit clone https://github.com/your-username/auth-task-management.git
 cd auth-task-management
 ```
 
-Install dependencies:
+2.Install dependencies:
 ```
 bashCopynpm install
 ```
 
-Set up the database:
+3.Set up the database:
 
 Create a PostgreSQL database named auth_system.
 Run the following SQL scripts to create the necessary tables:
@@ -91,7 +91,7 @@ CREATE TABLE user_tokens (
 ```
 
 
-Configure the environment variables:
+4.Configure the environment variables:
 
 Create a .env file in the root directory with the following content:
 ```
@@ -105,12 +105,12 @@ PG_DATABASE=auth_system
 ```
 
 
-Start the server:
+5.Start the server:
 ```
 bashCopynpm start
 ```
 
-Open the application in your browser:
+6.Open the application in your browser:
 ```
 Login/Register: http://localhost:5000/public/index.html
 Dashboard: http://localhost:5000/public/dashboard.html
@@ -118,20 +118,19 @@ Dashboard: http://localhost:5000/public/dashboard.html
 
 
 **API Endpoints**
-Authentication
-```
+**Authentication**
+
 POST /api/register: Register a new user.
 POST /api/login: Log in and receive a token.
 POST /api/logout: Log out by invalidating the token.
-```
 
-Task Management
-```
+**Task Management**
+
 POST /api/task/create: Create a new task.
 GET /api/task/list: Get a list of all tasks.
 PUT /api/task/update: Update a task.
 DELETE /api/task/delete: Soft delete a task.
-```
+
 
 **Frontend Pages**
 
