@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dashboard">
+        <div id="userInfo">
+          <h2>Welcome!</h2>
+          <p>Loading user information...</p>
+        </div>
+
+        <!-- Task management section -->
+        <div id="taskManagement">
+          <h3>Task Management</h3>
+          <button onclick="createTask()">Create New Task</button>
+        </div>
+
+        <!-- Display tasks -->
+        <h3>Task List</h3>
+        <ul id="taskListItems"></ul>
+
+        <button onclick="handleLogout()">Logout</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
