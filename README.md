@@ -145,9 +145,6 @@ Dashboard: http://localhost:5000/public/dashboard.html
 
     - Role-based access control for administrative tasks.
     - Integration with third-party services (e.g., email verification).
-    - Enhanced frontend design using modern frameworks like React or Vue.js.
-
-- **License**
-    - This project is licensed under the MIT License.
+      
 - **Contributions**
    - Contributions are welcome! Feel free to fork the repository and submit pull requests.
