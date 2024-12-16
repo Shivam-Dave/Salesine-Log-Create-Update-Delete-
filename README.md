@@ -132,20 +132,20 @@ Dashboard: http://localhost:5000/public/dashboard.html
 
 - **Frontend Pages**
 
-- Login and Registration: Handles user authentication.
-- Dashboard: Allows task management (Create, Update, Delete).
+   - Login and Registration: Handles user authentication.
+   - Dashboard: Allows task management (Create, Update, Delete).
 
 - **Technologies Used**
 
-- Backend: Node.js, Express.js, PostgreSQL
-- Frontend: HTML, CSS, JavaScript
-- Authentication: JWT, bcrypt
+    - Backend: Node.js, Express.js, PostgreSQL
+    - Frontend: HTML, CSS, JavaScript
+    - Authentication: JWT, bcrypt
 
 - **Future Enhancements**
 
-- Role-based access control for administrative tasks.
-- Integration with third-party services (e.g., email verification).
-- Enhanced frontend design using modern frameworks like React or Vue.js.
+    - Role-based access control for administrative tasks.
+    - Integration with third-party services (e.g., email verification).
+    - Enhanced frontend design using modern frameworks like React or Vue.js.
 
 - **License**
 This project is licensed under the MIT License.
