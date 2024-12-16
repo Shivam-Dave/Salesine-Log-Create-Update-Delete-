@@ -148,6 +148,6 @@ Dashboard: http://localhost:5000/public/dashboard.html
     - Enhanced frontend design using modern frameworks like React or Vue.js.
 
 - **License**
-This project is licensed under the MIT License.
-Contributions
+    This project is licensed under the MIT License.
+- **Contributions**
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
