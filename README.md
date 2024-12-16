@@ -41,8 +41,8 @@ An authentication system integrated with task management features, built using *
 **Prerequisites**
 Before starting, ensure you have the following installed:
 
- - Node.js (v14 or higher)
- - PostgreSQL (v12 or higher)
+ Node.js (v14 or higher)
+ PostgreSQL (v12 or higher)
 
 **Setup Instructions**
 
@@ -59,8 +59,8 @@ bashCopynpm install
 
 3. Set up the database:
 
-- Create a PostgreSQL database named auth_system.
-- Run the following SQL scripts to create the necessary tables:
+Create a PostgreSQL database named auth_system.
+Run the following SQL scripts to create the necessary tables:
 ```
 sqlCopyCREATE TABLE users (
   id SERIAL PRIMARY KEY,
@@ -93,7 +93,7 @@ CREATE TABLE user_tokens (
 
 4. Configure the environment variables:
 
-- Create a .env file in the root directory with the following content:
+Create a .env file in the root directory with the following content:
 ```
 envCopyJWT_SECRET=your_jwt_secret_key_here
 TOKEN_EXPIRY=24h
@@ -119,17 +119,15 @@ Dashboard: http://localhost:5000/public/dashboard.html
 
 **API Endpoints**
 - **Authentication**
-
-- POST /api/register: Register a new user.
-- POST /api/login: Log in and receive a token.
-- POST /api/logout: Log out by invalidating the token.
+   - POST /api/register: Register a new user.
+   - POST /api/login: Log in and receive a token.
+   - POST /api/logout: Log out by invalidating the token.
 
 - **Task Management**
-
-- POST /api/task/create: Create a new task.
-- GET /api/task/list: Get a list of all tasks.
-- PUT /api/task/update: Update a task.
-- DELETE /api/task/delete: Soft delete a task.
+   - POST /api/task/create: Create a new task.
+   - GET /api/task/list: Get a list of all tasks.
+   - PUT /api/task/update: Update a task.
+   - DELETE /api/task/delete: Soft delete a task.
 
 
 - **Frontend Pages**
